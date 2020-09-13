@@ -20,6 +20,13 @@
     width: 100%;
 }
 
+.hot{
+    color: red;
+}
+
+.cold {
+    color: cornflowerblue;
+}
 
 @media  (max-width:768px){
     .container .row>div:first-of-type{
