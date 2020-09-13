@@ -7,5 +7,14 @@ var Sensor = /** @class */ (function () {
     };
     return Sensor;
 }());
+var Fan = /** @class */ (function () {
+    function Fan() {
+    }
+    return Fan;
+}());
 var sensor = new Sensor();
-sensor.setTemperature(35);
+//sensor.setTemperature(35);
+var temperature_slider = document.querySelector('#temperature_slider');
+temperature_slider.addEventListener('change', function (evt) {
+    sensor.setTemperature(evt.target.value);
+});

@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Design Patter Observer</title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"
+          integrity="sha384-5QFXyVb+lrCzdN228VS3HmzpiE7ZVwLQtkt+0d9W43LQMzz4HBnnqvVxKg6O+04d" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <h2>Sensor</h2>
+            <label for="temperature_slider">Temperature</label>
+            <input class="slider" id="temperature_slider" type="range" min="10" max="60">
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <h2>Fan</h2>
+        </div>
+    </div>
+</div>
+
 
 <script src="./index.js"></script>
 </body>

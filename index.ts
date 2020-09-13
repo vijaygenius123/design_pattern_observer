@@ -8,5 +8,13 @@ class Sensor{
     }
 }
 
+class Fan{
+}
+
 let sensor = new Sensor();
-sensor.setTemperature(35);
+//sensor.setTemperature(35);
+
+const temperature_slider = document.querySelector('#temperature_slider')
+temperature_slider.addEventListener('change', function (evt){
+    sensor.setTemperature(evt.target.value);
+})
